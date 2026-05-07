@@ -1,0 +1,142 @@
+﻿// !$*UTF8*$!
+{ archiveVersion = 1; classes = {}; objectVersion = 56; objects = {
+        D9D8CF3EA79DFD80179EACAE /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486C921E24C5A0B5F0324462 /* AppState.swift */; };
+        7E510B8307204FD3913B3A86 /* ResumeMasterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F48A4AF8F40785AD8C94C4 /* ResumeMasterApp.swift */; };
+        6AADCD050A6DFEBBD22F17EB /* ActionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B9BA3538B2461D4BBF755A /* ActionLabel.swift */; };
+        3CA21DCFA6694A6E4CBAA580 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE8D1EBDECC63325EA0F6A2 /* HapticManager.swift */; };
+        A582121BD62674B777CE7FCF /* MinimalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A4F02367347F0AD575959C /* MinimalButton.swift */; };
+        17C641B0CE93536E364AC603 /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C899921A2A4800F7921F4E /* SpringAnimation.swift */; };
+        54BDF5EFB27D9D8F04B60D4E /* SwipeCardModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D7890D6A907CE9888A3C62 /* SwipeCardModifier.swift */; };
+        9E892FF42D249CB5B8866E7E /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D331F167FE66761C093E52F7 /* DesignSystem.swift */; };
+        91B9D834B074BBB4EF6B616C /* SwipeThresholds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D179F1536C8F7A702DFA663 /* SwipeThresholds.swift */; };
+        2DFB83092AF753B9A9519054 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC4A8CD852C92A463401B52 /* Job.swift */; };
+        587EDA4524B9DB54C662BD6A /* Resume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0BAD68AAE3E3DEA56DD3E0 /* Resume.swift */; };
+        4908B42C4ED918966957A15D /* SwipeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8028025497FB8E5513B0A6 /* SwipeAction.swift */; };
+        BD4C690D94D1C9CB2AC38E2B /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE51D6A618703DEAD66DA2E1 /* Template.swift */; };
+        33BD81D234455922279B90B0 /* JobQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F14202D52965B727F90321B /* JobQueue.swift */; };
+        535B935552B71C1197ACC9F5 /* ResumeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CDA9D5106C8956E938A8D1 /* ResumeStore.swift */; };
+        50CC439EC8414F166E4D352E /* ActionBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D55F1B5FC3BEB65D28B519 /* ActionBadgeView.swift */; };
+        D23712DE11337309A88996CD /* CardStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12235E71BFE363EFAA0990CB /* CardStackView.swift */; };
+        431A20A012156D58B691483C /* JobCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CEFEAB2F5EA9E70B4AFA2A /* JobCardView.swift */; };
+        BE753363BF9904C1D3B69822 /* JobsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10F0D0C6A9B15846F74D9A /* JobsView.swift */; };
+        42785B020DA43182BCD0EFB9 /* SwipeOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBF0FAE7BBBEEE1BB92C008 /* SwipeOverlayView.swift */; };
+        7E3BBCF9929CC331E569C921 /* ExportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE9E4E7A3CED30C8C07A0D6 /* ExportView.swift */; };
+        3284B7BC459D3363C04D1BA4 /* ResumePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3F18C386713CC8B8F6A5B3 /* ResumePreviewView.swift */; };
+        54719BAA8A23771933F1758F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBF43FCE4D707FBAB3F217C /* ProfileView.swift */; };
+        10A68CF2E9CAF601CD3268B8 /* FieldRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C1B7A7566B1FEF224E5B45 /* FieldRowView.swift */; };
+        685851D1D8DDC59485781BA9 /* ResumeBuilderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3333B3F8BE97DA72B7E3F /* ResumeBuilderView.swift */; };
+        61291130F7361A717E2695F6 /* SectionEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFBAF8FA48822D1F7AF7573 /* SectionEditorView.swift */; };
+        A5FED96EEDECE22DF74412AE /* SectionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4F3D2C3AD77525E226C0CD /* SectionRowView.swift */; };
+        B1043339E1B500EDCF7098BA /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6211C3895A59090345879C2C /* RootTabView.swift */; };
+        1EA53B80EF12D45EF4DC18D5 /* TemplateCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58BDEF9A5CE304BF1BB056 /* TemplateCardView.swift */; };
+        BED2301E4A77EA3B6D4602D5 /* TemplatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A941ACBD46F96669D6C2E9 /* TemplatesView.swift */; };
+        964BD5656C7A016EF0C9ADA7 /* ResumeMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = ResumeMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+        64488557C2EBEE21EA19BF06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = <group; };
+        486C921E24C5A0B5F0324462 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App/AppState.swift"; sourceTree = <group; };
+        99F48A4AF8F40785AD8C94C4 /* ResumeMasterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App/ResumeMasterApp.swift"; sourceTree = <group; };
+        E0B9BA3538B2461D4BBF755A /* ActionLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Components/ActionLabel.swift"; sourceTree = <group; };
+        0DE8D1EBDECC63325EA0F6A2 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Components/HapticManager.swift"; sourceTree = <group; };
+        18A4F02367347F0AD575959C /* MinimalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Components/MinimalButton.swift"; sourceTree = <group; };
+        97C899921A2A4800F7921F4E /* SpringAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Components/SpringAnimation.swift"; sourceTree = <group; };
+        71D7890D6A907CE9888A3C62 /* SwipeCardModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Components/SwipeCardModifier.swift"; sourceTree = <group; };
+        D331F167FE66761C093E52F7 /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants/DesignSystem.swift"; sourceTree = <group; };
+        1D179F1536C8F7A702DFA663 /* SwipeThresholds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants/SwipeThresholds.swift"; sourceTree = <group; };
+        2DC4A8CD852C92A463401B52 /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models/Job.swift"; sourceTree = <group; };
+        1D0BAD68AAE3E3DEA56DD3E0 /* Resume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models/Resume.swift"; sourceTree = <group; };
+        7C8028025497FB8E5513B0A6 /* SwipeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models/SwipeAction.swift"; sourceTree = <group; };
+        AE51D6A618703DEAD66DA2E1 /* Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models/Template.swift"; sourceTree = <group; };
+        4F14202D52965B727F90321B /* JobQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Persistence/JobQueue.swift"; sourceTree = <group; };
+        13CDA9D5106C8956E938A8D1 /* ResumeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Persistence/ResumeStore.swift"; sourceTree = <group; };
+        86D55F1B5FC3BEB65D28B519 /* ActionBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/Jobs/ActionBadgeView.swift"; sourceTree = <group; };
+        12235E71BFE363EFAA0990CB /* CardStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/Jobs/CardStackView.swift"; sourceTree = <group; };
+        66CEFEAB2F5EA9E70B4AFA2A /* JobCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/Jobs/JobCardView.swift"; sourceTree = <group; };
+        7B10F0D0C6A9B15846F74D9A /* JobsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/Jobs/JobsView.swift"; sourceTree = <group; };
+        5CBF0FAE7BBBEEE1BB92C008 /* SwipeOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/Jobs/SwipeOverlayView.swift"; sourceTree = <group; };
+        FFE9E4E7A3CED30C8C07A0D6 /* ExportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/Preview/ExportView.swift"; sourceTree = <group; };
+        8C3F18C386713CC8B8F6A5B3 /* ResumePreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/Preview/ResumePreviewView.swift"; sourceTree = <group; };
+        2DBF43FCE4D707FBAB3F217C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/Profile/ProfileView.swift"; sourceTree = <group; };
+        28C1B7A7566B1FEF224E5B45 /* FieldRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/Resume/FieldRowView.swift"; sourceTree = <group; };
+        22D3333B3F8BE97DA72B7E3F /* ResumeBuilderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/Resume/ResumeBuilderView.swift"; sourceTree = <group; };
+        6AFBAF8FA48822D1F7AF7573 /* SectionEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/Resume/SectionEditorView.swift"; sourceTree = <group; };
+        3A4F3D2C3AD77525E226C0CD /* SectionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/Resume/SectionRowView.swift"; sourceTree = <group; };
+        6211C3895A59090345879C2C /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/Root/RootTabView.swift"; sourceTree = <group; };
+        CE58BDEF9A5CE304BF1BB056 /* TemplateCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/Templates/TemplateCardView.swift"; sourceTree = <group; };
+        C9A941ACBD46F96669D6C2E9 /* TemplatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/Templates/TemplatesView.swift"; sourceTree = <group; };
+        CED7EEE6F1962805D7463168 /* Products */ = {isa = PBXGroup; children = (964BD5656C7A016EF0C9ADA7 /* ResumeMaster.app */,); name = Products; sourceTree = <group; };
+        D87D58F02619D6D4F0C5875D /* ResumeMaster */ = {isa = PBXGroup; children = (
+                64488557C2EBEE21EA19BF06 /* Info.plist */,
+                486C921E24C5A0B5F0324462 /* AppState.swift */,
+                99F48A4AF8F40785AD8C94C4 /* ResumeMasterApp.swift */,
+                E0B9BA3538B2461D4BBF755A /* ActionLabel.swift */,
+                0DE8D1EBDECC63325EA0F6A2 /* HapticManager.swift */,
+                18A4F02367347F0AD575959C /* MinimalButton.swift */,
+                97C899921A2A4800F7921F4E /* SpringAnimation.swift */,
+                71D7890D6A907CE9888A3C62 /* SwipeCardModifier.swift */,
+                D331F167FE66761C093E52F7 /* DesignSystem.swift */,
+                1D179F1536C8F7A702DFA663 /* SwipeThresholds.swift */,
+                2DC4A8CD852C92A463401B52 /* Job.swift */,
+                1D0BAD68AAE3E3DEA56DD3E0 /* Resume.swift */,
+                7C8028025497FB8E5513B0A6 /* SwipeAction.swift */,
+                AE51D6A618703DEAD66DA2E1 /* Template.swift */,
+                4F14202D52965B727F90321B /* JobQueue.swift */,
+                13CDA9D5106C8956E938A8D1 /* ResumeStore.swift */,
+                86D55F1B5FC3BEB65D28B519 /* ActionBadgeView.swift */,
+                12235E71BFE363EFAA0990CB /* CardStackView.swift */,
+                66CEFEAB2F5EA9E70B4AFA2A /* JobCardView.swift */,
+                7B10F0D0C6A9B15846F74D9A /* JobsView.swift */,
+                5CBF0FAE7BBBEEE1BB92C008 /* SwipeOverlayView.swift */,
+                FFE9E4E7A3CED30C8C07A0D6 /* ExportView.swift */,
+                8C3F18C386713CC8B8F6A5B3 /* ResumePreviewView.swift */,
+                2DBF43FCE4D707FBAB3F217C /* ProfileView.swift */,
+                28C1B7A7566B1FEF224E5B45 /* FieldRowView.swift */,
+                22D3333B3F8BE97DA72B7E3F /* ResumeBuilderView.swift */,
+                6AFBAF8FA48822D1F7AF7573 /* SectionEditorView.swift */,
+                3A4F3D2C3AD77525E226C0CD /* SectionRowView.swift */,
+                6211C3895A59090345879C2C /* RootTabView.swift */,
+                CE58BDEF9A5CE304BF1BB056 /* TemplateCardView.swift */,
+                C9A941ACBD46F96669D6C2E9 /* TemplatesView.swift */,
+            ); path = ResumeMaster; sourceTree = <group; };
+        51A068098A2E037227B34F49 = {isa = PBXGroup; children = (D87D58F02619D6D4F0C5875D /* ResumeMaster */, CED7EEE6F1962805D7463168 /* Products */,); sourceTree = <group; };
+        E0D0D59CD93F89024E87C12C /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+                D9D8CF3EA79DFD80179EACAE /* AppState.swift in Sources */,
+                7E510B8307204FD3913B3A86 /* ResumeMasterApp.swift in Sources */,
+                6AADCD050A6DFEBBD22F17EB /* ActionLabel.swift in Sources */,
+                3CA21DCFA6694A6E4CBAA580 /* HapticManager.swift in Sources */,
+                A582121BD62674B777CE7FCF /* MinimalButton.swift in Sources */,
+                17C641B0CE93536E364AC603 /* SpringAnimation.swift in Sources */,
+                54BDF5EFB27D9D8F04B60D4E /* SwipeCardModifier.swift in Sources */,
+                9E892FF42D249CB5B8866E7E /* DesignSystem.swift in Sources */,
+                91B9D834B074BBB4EF6B616C /* SwipeThresholds.swift in Sources */,
+                2DFB83092AF753B9A9519054 /* Job.swift in Sources */,
+                587EDA4524B9DB54C662BD6A /* Resume.swift in Sources */,
+                4908B42C4ED918966957A15D /* SwipeAction.swift in Sources */,
+                BD4C690D94D1C9CB2AC38E2B /* Template.swift in Sources */,
+                33BD81D234455922279B90B0 /* JobQueue.swift in Sources */,
+                535B935552B71C1197ACC9F5 /* ResumeStore.swift in Sources */,
+                50CC439EC8414F166E4D352E /* ActionBadgeView.swift in Sources */,
+                D23712DE11337309A88996CD /* CardStackView.swift in Sources */,
+                431A20A012156D58B691483C /* JobCardView.swift in Sources */,
+                BE753363BF9904C1D3B69822 /* JobsView.swift in Sources */,
+                42785B020DA43182BCD0EFB9 /* SwipeOverlayView.swift in Sources */,
+                7E3BBCF9929CC331E569C921 /* ExportView.swift in Sources */,
+                3284B7BC459D3363C04D1BA4 /* ResumePreviewView.swift in Sources */,
+                54719BAA8A23771933F1758F /* ProfileView.swift in Sources */,
+                10A68CF2E9CAF601CD3268B8 /* FieldRowView.swift in Sources */,
+                685851D1D8DDC59485781BA9 /* ResumeBuilderView.swift in Sources */,
+                61291130F7361A717E2695F6 /* SectionEditorView.swift in Sources */,
+                A5FED96EEDECE22DF74412AE /* SectionRowView.swift in Sources */,
+                B1043339E1B500EDCF7098BA /* RootTabView.swift in Sources */,
+                1EA53B80EF12D45EF4DC18D5 /* TemplateCardView.swift in Sources */,
+                BED2301E4A77EA3B6D4602D5 /* TemplatesView.swift in Sources */,
+            ); runOnlyForDeploymentPostprocessing = 0; };
+        FEB968D3C4BCB35760FDA754 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+        BCE3F5D09B02DA782EA0B271 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+        F762108CA727F0BCD961FC74 /* ResumeMaster */ = {isa = PBXNativeTarget; buildConfigurationList = CC8C96CD04D65BBD11F6AD03; buildPhases = (E0D0D59CD93F89024E87C12C, FEB968D3C4BCB35760FDA754, BCE3F5D09B02DA782EA0B271,); buildRules = (); dependencies = (); name = ResumeMaster; productName = ResumeMaster; productReference = 964BD5656C7A016EF0C9ADA7 /* ResumeMaster.app */; productType = "com.apple.product-type.application"; };
+        16EEAF57BAFC2A41CAB7C99A /* Project object */ = {isa = PBXProject; attributes = {BuildIndependentTargetsInParallel = 1; LastSwiftUpdateCheck = 1500; LastUpgradeCheck = 1500; TargetAttributes = {F762108CA727F0BCD961FC74 = {CreatedOnToolsVersion = 15.0;};};}; buildConfigurationList = BDB2ABBE52101FAD05AD3C4E; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, Base); mainGroup = 51A068098A2E037227B34F49; productRefGroup = CED7EEE6F1962805D7463168; projectDirPath = ""; projectRoot = ""; targets = (F762108CA727F0BCD961FC74,); };
+        77E49109DA4970F708343302 = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGN_STYLE = Automatic; DEBUG_INFORMATION_FORMAT = dwarf; GCC_OPTIMIZATION_LEVEL = 0; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SDKROOT = iphoneos; SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; SWIFT_VERSION = 5.9;}; name = Debug; };
+        0012FD6195EC4E7D802BCED1 = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGN_STYLE = Automatic; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SDKROOT = iphoneos; SWIFT_COMPILATION_MODE = wholemodule; SWIFT_OPTIMIZATION_LEVEL = "-O"; SWIFT_VERSION = 5.9; VALIDATE_PRODUCT = YES;}; name = Release; };
+        87C9ECF0481C7DA7675DCD77 = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = ResumeMaster/Info.plist; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.resumemaster.ios; PRODUCT_NAME = ResumeMaster; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SWIFT_VERSION = 5.9; TARGETED_DEVICE_FAMILY = "1,2";}; name = Debug; };
+        C53A8ED71E54C4D992DE855B = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = ResumeMaster/Info.plist; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.resumemaster.ios; PRODUCT_NAME = ResumeMaster; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SWIFT_VERSION = 5.9; TARGETED_DEVICE_FAMILY = "1,2";}; name = Release; };
+        BDB2ABBE52101FAD05AD3C4E = {isa = XCConfigurationList; buildConfigurations = (77E49109DA4970F708343302, 0012FD6195EC4E7D802BCED1,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+        CC8C96CD04D65BBD11F6AD03 = {isa = XCConfigurationList; buildConfigurations = (87C9ECF0481C7DA7675DCD77, C53A8ED71E54C4D992DE855B,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+}; rootObject = 16EEAF57BAFC2A41CAB7C99A /* Project object */; }

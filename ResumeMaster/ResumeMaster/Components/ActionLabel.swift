@@ -1,0 +1,2 @@
+﻿import SwiftUI
+struct ActionLabel: View { let title: String; let systemImage: String; let color: Color; let emphasized: Bool; var body: some View { Label(title, systemImage: systemImage).font(.system(size: emphasized ? 18 : 14, weight: .black)).tracking(1.1).foregroundStyle(color).padding(.horizontal, emphasized ? 16 : 12).padding(.vertical, emphasized ? 10 : 8).background(Capsule().fill(color.opacity(0.12))).overlay(Capsule().stroke(color,lineWidth:1.5)) } }

@@ -1,0 +1,2 @@
+﻿import SwiftUI
+struct MinimalButton: ButtonStyle { var foreground: Color = DS.ColorToken.text; var background: Color = DS.ColorToken.surfaceOffset; func makeBody(configuration: Configuration) -> some View { configuration.label.font(DS.FontToken.label).foregroundStyle(foreground).frame(width:52,height:52).background(Circle().fill(background)).scaleEffect(configuration.isPressed ? 0.92 : 1).animation(.selectionRing,value:configuration.isPressed) } }
