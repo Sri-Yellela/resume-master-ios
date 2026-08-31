@@ -32,7 +32,7 @@ class LinkedInAuthService: NSObject, ObservableObject, ASWebAuthenticationPresen
 
   static let shared = LinkedInAuthService()
 
-  private let resumeMasterBaseURL = "https://YOUR_DOMAIN.com"
+  private let resumeMasterBaseURL = APIConfig.baseURL.absoluteString
   // For local dev: "http://localhost:3000"
 
   @Published var isImporting = false
