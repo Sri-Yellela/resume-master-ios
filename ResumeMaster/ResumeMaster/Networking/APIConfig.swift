@@ -2,7 +2,11 @@ import Foundation
 
 /// Where the app talks to, and the one contract version it was written against.
 enum APIConfig {
-    static let baseURL = URL(string: "https://resumemaster.one")!
+    /// The public brand. One place, so a screen and the home-screen icon cannot disagree.
+    static let brand = "Draft"
+
+    /// Bare apex, no www — see docs/BRAND.md in the server repository.
+    static let baseURL = URL(string: "https://jobsviadraft.com")!
 
     /// The vendored contract this client was built against — see Contract/ and
     /// scripts/verify-contract.mjs. Bump only together with a re-copy of those files.

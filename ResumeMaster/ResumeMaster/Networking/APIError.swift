@@ -49,7 +49,7 @@ enum APIError: Error, Equatable {
         case .decoding:
             return "The server sent something this version of the app does not understand."
         case .transport:
-            return "Could not reach Resume Master. Check your connection."
+            return "Could not reach \(APIConfig.brand). Check your connection."
         }
     }
 }

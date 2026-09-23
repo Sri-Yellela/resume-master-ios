@@ -1,10 +1,10 @@
-# Resume Master - iOS
+# Draft - iOS
 
 ![Swift](https://img.shields.io/badge/Swift-FA7343?style=flat&logo=swift&logoColor=white)
 ![SwiftUI](https://img.shields.io/badge/SwiftUI-000000?style=flat&logo=apple&logoColor=white)
 ![iOS](https://img.shields.io/badge/iOS_17+-000000?style=flat&logo=apple&logoColor=white)
 
-Native iOS client for [Resume Master](https://github.com/Sri-Yellela/resume-master). Swipe a job
+Native iOS client for [Draft](https://github.com/Sri-Yellela/resume-master). Swipe a job
 feed, review each application before it is sent, and build, template and export your resume.
 
 It is a client over the same JSON API the web app uses — not a wrapper around it. The web client is
@@ -77,7 +77,7 @@ Currently pinned: **v1.1.0**.
 ### Requirements
 - Mac with Xcode 15+
 - iOS 17+ device or simulator
-- A Resume Master account (the app signs in against the live API; there is no offline mode for the feed)
+- A Draft account (the app signs in against the live API; there is no offline mode for the feed)
 - Apple Developer account (free for simulator, $99/yr for device + App Store)
 
 ### Run on Simulator
@@ -109,5 +109,5 @@ Not yet possible. Missing, in the order they will block you:
 Simulator builds are unaffected.
 
 ## Related Repos
-- [Resume Master (web + backend)](https://github.com/Sri-Yellela/resume-master)
-- [Resume Master Android](https://github.com/Sri-Yellela/resume-master-android)
+- [Draft (web + backend)](https://github.com/Sri-Yellela/resume-master)
+- [Draft Android](https://github.com/Sri-Yellela/resume-master-android)

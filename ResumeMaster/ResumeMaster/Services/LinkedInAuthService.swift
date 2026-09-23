@@ -41,7 +41,8 @@ class LinkedInAuthService: NSObject, ObservableObject, ASWebAuthenticationPresen
   func startImport(completion: @escaping (LinkedInResumeFields?) -> Void) {
     guard let authURL = URL(string: "\(resumeMasterBaseURL)/auth/linkedin?source=ios") else { return }
 
-    let callbackScheme = "resumemaster"
+    // Must match CFBundleURLSchemes in Info.plist, or the session never returns.
+    let callbackScheme = "draft"
 
     isImporting = true
     importError = nil

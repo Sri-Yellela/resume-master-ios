@@ -14,7 +14,7 @@ struct LoginView: View {
             Spacer()
 
             VStack(spacing: DS.Spacing.sm) {
-                Text("Resume Master")
+                Text(APIConfig.brand)
                     .font(DS.FontToken.display(28))
                     .foregroundStyle(DS.ColorToken.text)
                 Text("Sign in to see jobs matched to your profile.")

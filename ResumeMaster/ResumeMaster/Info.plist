@@ -2,9 +2,9 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>CFBundleName</key><string>Resume Master</string>
-    <key>CFBundleDisplayName</key><string>Resume Master</string>
-    <key>CFBundleIdentifier</key><string>com.resumemaster.ios</string>
+    <key>CFBundleName</key><string>Draft</string>
+    <key>CFBundleDisplayName</key><string>Draft</string>
+    <key>CFBundleIdentifier</key><string>com.draft.ios</string>
     <key>CFBundleShortVersionString</key><string>1.0</string>
     <key>CFBundleVersion</key><string>1</string>
     <key>MinimumOSVersion</key><string>17.0</string>
@@ -13,10 +13,10 @@
     <array>
         <dict>
             <key>CFBundleURLName</key>
-            <string>com.resumemaster.ios.oauth</string>
+            <string>com.draft.ios.oauth</string>
             <key>CFBundleURLSchemes</key>
             <array>
-                <string>resumemaster</string>
+                <string>draft</string>
             </array>
         </dict>
     </array>

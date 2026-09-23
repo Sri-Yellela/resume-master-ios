@@ -1,6 +1,6 @@
 /**
- * Resume Master — Mobile API types.
- * Contract version 1.1.0.
+ * Draft — Mobile API types.
+ * Contract version 1.1.1.
  *
  * GENERATED — DO NOT EDIT. Regenerate with `node scripts/generateMobileContract.mjs`.
  *
@@ -49,6 +49,7 @@ export interface Job {
   isH1bSponsor: boolean | null;
   /** Free text, as posted. Not normalised, not geocoded. */
   location?: string;
+  /** INTERNAL — DO NOT DISPLAY THIS NUMBER. The local ATS engine orders coarsely and cannot support a shown figure: Spearman rho 0.746 against a human-graded set of 30, with 12.2% of pairs still mis-ordered. "This job is a 43" claims a precision it does not have. Render the BAND instead — Strong (>=44) / Moderate (>=26) / Weak / Not enough signal — whose cutpoints and copy are defined once in shared/atsBands.js. A NULL IS NOT A ZERO: null means the scorer declined for want of signal, which is its own band and must never render as a low score. The number stays in the payload because the auto-apply gate is a numeric threshold (30) and mobile needs to show remaining capacity against it; that is the only sanctioned use. */
   matchScore: number | null;
   /** As published by the source. Free text or ISO — not normalised. */
   postedAt: string | null;
@@ -134,6 +135,13 @@ export interface ApplyStatusResponse {
   application: Record<string, unknown> | null;
   /** 'applied' or 'idle'. NOT a member of the apply-run status vocabulary — this is the user's own relationship to the posting, not a run's state. */
   status: string;
+}
+
+/** The GENERATION cost budget. Approving generates a tailored resume and cover letter per application, so this is the limit that bounds spend. Reported on every run, not only when it binds, so a client can show what is left rather than discovering the ceiling by being refused at it. */
+export interface ApprovalCap {
+  approvedLast24h: number;
+  limit: number;
+  remaining: number;
 }
 
 /** 202. Approval creates a NEW run carrying approval_mode='approved'; the ids you sent become 'superseded' and the submission lives on new runJobIds. The started run is NESTED under `run` — it is not flattened into this body. */
@@ -321,12 +329,15 @@ export interface PendingItem {
   title: string | null;
 }
 
+/** The approval queue, plus the budget that decides how much of it can be acted on. */
 export interface PendingResponse {
+  approvalCap: ApprovalCap;
   pending: PendingItem[];
 }
 
 export interface PendingResume {
   artifactId: number | null;
+  /** INTERNAL - DO NOT DISPLAY. The engine orders coarsely (rho 0.746 against a human-graded 30, 12.2% of pairs mis-ordered) and cannot support a shown number. Render the band from shared/atsBands.js instead. null means the scorer DECLINED for want of signal - its own band, never a zero. Kept in the payload because the auto-apply gate is numeric (30). */
   atsScore: number | null;
   available: boolean;
 }
@@ -350,7 +361,7 @@ export interface QuestionsResponse {
   questions: OpenQuestion[];
 }
 
-/** The GENERATION cost budget, reported so a client can show what is left rather than discovering the ceiling by being refused at it. */
+/** The PREVIEW/SESSION budget — how many applications may be opened and filled per day. NOT the cost budget: AL2 moved generation to approval time, so queueing spends no model tokens. See ApprovalCap for the one that bounds money. */
 export interface QueueCap {
   limit: number;
   queuedLast24h: number;
@@ -392,6 +403,7 @@ export interface RunDetailResponse {
 /** One application within a run. */
 export interface RunJob {
   applyUrl: string | null;
+  /** INTERNAL - DO NOT DISPLAY. The engine orders coarsely (rho 0.746 against a human-graded 30, 12.2% of pairs mis-ordered) and cannot support a shown number. Render the band from shared/atsBands.js instead. null means the scorer DECLINED for want of signal - its own band, never a zero. Kept in the payload because the auto-apply gate is numeric (30). */
   atsScore: number | null;
   company: string | null;
   createdAt: number | null;
@@ -465,6 +477,7 @@ export interface RunLogEntry {
 
 /** 202. QUEUED, NOT SUBMITTED — see the endpoint note. `queued` is the ids accepted after duplicates were dropped and is the only correct count to report. */
 export interface RunQueuedResponse {
+  approvalCap: ApprovalCap;
   dailyCap: DailyCap;
   mode: string;
   ok: boolean;

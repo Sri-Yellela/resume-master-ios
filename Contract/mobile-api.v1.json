@@ -1,13 +1,13 @@
 {
   "openapi": "3.1.0",
   "info": {
-    "title": "Resume Master — Mobile API",
-    "version": "1.1.0",
+    "title": "Draft — Mobile API",
+    "version": "1.1.1",
     "description": "The contract between this repository and the two mobile repositories (iOS, Android), which are native clients over this JSON API and live outside this tree.\n\nGENERATED — DO NOT HAND-EDIT. Regenerate with `node scripts/generateMobileContract.mjs`. The Job schema is produced by EXECUTING services/jobs/mapJobRow.js, so it cannot disagree with what the server actually emits. test/mobileApiContract.test.js fails the build if this file and the source ever disagree.\n\nOnly the endpoints a swipe feed and a review flow need are published. Anything absent is absent on purpose and is not a promise — see x-retired for what a greenfield client must not call, and x-mobile-gaps for what mobile needs that this API does not yet expose."
   },
   "servers": [
     {
-      "url": "https://resumemaster.one",
+      "url": "https://jobsviadraft.com",
       "description": "Production"
     }
   ],
@@ -2218,6 +2218,21 @@
         },
         "description": "About the CALLER, not about the job. Discloses nothing of another user's."
       },
+      "ApprovalCap": {
+        "type": "object",
+        "properties": {
+          "approvedLast24h": {
+            "type": "number"
+          },
+          "limit": {
+            "type": "number"
+          },
+          "remaining": {
+            "type": "number"
+          }
+        },
+        "description": "The GENERATION cost budget. Approving generates a tailored resume and cover letter per application, so this is the limit that bounds spend. Reported on every run, not only when it binds, so a client can show what is left rather than discovering the ceiling by being refused at it."
+      },
       "ApproveResponse": {
         "type": "object",
         "properties": {
@@ -2813,6 +2828,7 @@
               "number",
               "null"
             ],
+            "description": "INTERNAL — DO NOT DISPLAY THIS NUMBER. The local ATS engine orders coarsely and cannot support a shown figure: Spearman rho 0.746 against a human-graded set of 30, with 12.2% of pairs still mis-ordered. \"This job is a 43\" claims a precision it does not have. Render the BAND instead — Strong (>=44) / Moderate (>=26) / Weak / Not enough signal — whose cutpoints and copy are defined once in shared/atsBands.js. A NULL IS NOT A ZERO: null means the scorer declined for want of signal, which is its own band and must never render as a low score. The number stays in the payload because the auto-apply gate is a numeric threshold (30) and mobile needs to show remaining capacity against it; that is the only sanctioned use.",
             "x-empty-row-value": null
           },
           "postedAt": {
@@ -3184,13 +3200,17 @@
       "PendingResponse": {
         "type": "object",
         "properties": {
+          "approvalCap": {
+            "$ref": "#/components/schemas/ApprovalCap"
+          },
           "pending": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/PendingItem"
             }
           }
-        }
+        },
+        "description": "The approval queue, plus the budget that decides how much of it can be acted on."
       },
       "PendingResume": {
         "type": "object",
@@ -3205,7 +3225,8 @@
             "type": [
               "number",
               "null"
-            ]
+            ],
+            "description": "INTERNAL - DO NOT DISPLAY. The engine orders coarsely (rho 0.746 against a human-graded 30, 12.2% of pairs mis-ordered) and cannot support a shown number. Render the band from shared/atsBands.js instead. null means the scorer DECLINED for want of signal - its own band, never a zero. Kept in the payload because the auto-apply gate is numeric (30)."
           },
           "available": {
             "type": "boolean"
@@ -3278,7 +3299,7 @@
             "type": "number"
           }
         },
-        "description": "The GENERATION cost budget, reported so a client can show what is left rather than discovering the ceiling by being refused at it."
+        "description": "The PREVIEW/SESSION budget — how many applications may be opened and filled per day. NOT the cost budget: AL2 moved generation to approval time, so queueing spends no model tokens. See ApprovalCap for the one that bounds money."
       },
       "ReadinessResponse": {
         "type": "object",
@@ -3395,7 +3416,8 @@
             "type": [
               "number",
               "null"
-            ]
+            ],
+            "description": "INTERNAL - DO NOT DISPLAY. The engine orders coarsely (rho 0.746 against a human-graded 30, 12.2% of pairs mis-ordered) and cannot support a shown number. Render the band from shared/atsBands.js instead. null means the scorer DECLINED for want of signal - its own band, never a zero. Kept in the payload because the auto-apply gate is numeric (30)."
           },
           "company": {
             "type": [
@@ -3678,6 +3700,9 @@
       "RunQueuedResponse": {
         "type": "object",
         "properties": {
+          "approvalCap": {
+            "$ref": "#/components/schemas/ApprovalCap"
+          },
           "dailyCap": {
             "$ref": "#/components/schemas/DailyCap"
           },

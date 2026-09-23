@@ -44,7 +44,7 @@ struct ProfileView: View {
                 }
 
                 Section("App") {
-                    Text("Resume Master iOS")
+                    Text("\(APIConfig.brand) iOS")
                     LabeledContent("API contract", value: APIConfig.contractVersion)
                     Text("Minimum deployment target: iOS 17")
                 }
