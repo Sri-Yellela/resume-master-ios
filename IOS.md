@@ -1,7 +1,7 @@
 # iOS — living work doc
 
-**Repo:** `resume-master-ios` · **Backend:** `../resume-master` ·
-**Contract:** `../resume-master/contract/mobile-api.v1.json` (read the version from the file)
+**Repo:** `resume-master-ios` · **Backend:** `../draft` ·
+**Contract:** `../draft/contract/mobile-api.v1.json` (read the version from the file)
 
 **Last reconciled:** 2026-09-07. SwiftUI, iOS 17+, Xcode 15+, project at
 `ResumeMaster/ResumeMaster.xcodeproj`.
@@ -78,7 +78,7 @@ catalog, plus a BOM on 55 of 57 files. Same generation process. 35 BOMs found he
 Info.plist and project.pbxproj are the dangerous ones — a BOM sits in front of pbxproj's mandatory
 // !$*UTF8*$! magic header. Both were TESTED and downgraded to RISK: plistlib parses Info.plist with
 the BOM intact, and the pbxproj header survives it. Re-verify with Xcode itself, which is the only
-parser that matters. Full sweep prompt: ../resume-master/docs/CORRUPTION_SWEEP.md
+parser that matters. Full sweep prompt: ../draft/docs/CORRUPTION_SWEEP.md
 
 5 · SILENT FAILURES ALREADY FOUND (Shape 3)
   Views/Preview/ExportView.swift:4 — `try? data.write(to: url)` then sets shareURL and shows an
@@ -131,7 +131,7 @@ equivalent exists here; do not build or delete it.
 Report every claim the code does not support. Note "Velocity-sensitive" is GENUINELY TRUE on iOS —
 SwipeCardModifier.finish() computes predictedEndTranslation and tests velocity > minimumVelocity —
 so do NOT carry Android's finding across. The README also links resume-master-web with a
-YOUR_USERNAME placeholder; the real repo is github.com/Sri-Yellela/resume-master.
+YOUR_USERNAME placeholder; the real repo is github.com/Sri-Yellela/draft.
 
 12 · STORE READINESS
 Signing, bundle identifier, provisioning, App Store Connect state, and the App Store privacy
@@ -153,7 +153,7 @@ Same as Android's, which is now proven: **toolchain → auth → contract-typed 
 queue.
 
 Android's Phase 2a report is the reference implementation:
-`../resume-master/docs/aj2-android-phase2a.md`. Two lessons from it likely to apply here:
+`../draft/docs/aj2-android-phase2a.md`. Two lessons from it likely to apply here:
 
 - **Persistence needs a process-death test with a real file-backed store.** An in-memory database
   cannot outlive the process that made it, so it cannot express the claim. Mutating hydration to

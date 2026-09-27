@@ -4,7 +4,7 @@
 ![SwiftUI](https://img.shields.io/badge/SwiftUI-000000?style=flat&logo=apple&logoColor=white)
 ![iOS](https://img.shields.io/badge/iOS_17+-000000?style=flat&logo=apple&logoColor=white)
 
-Native iOS client for [Draft](https://github.com/Sri-Yellela/resume-master). Swipe a job
+Native iOS client for [Draft](https://github.com/Sri-Yellela/draft). Swipe a job
 feed, review each application before it is sent, and build, template and export your resume.
 
 It is a client over the same JSON API the web app uses — not a wrapper around it. The web client is
@@ -109,5 +109,5 @@ Not yet possible. Missing, in the order they will block you:
 Simulator builds are unaffected.
 
 ## Related Repos
-- [Draft (web + backend)](https://github.com/Sri-Yellela/resume-master)
+- [Draft (web + backend)](https://github.com/Sri-Yellela/draft)
 - [Draft Android](https://github.com/Sri-Yellela/resume-master-android)
